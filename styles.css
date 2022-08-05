@@ -23,24 +23,49 @@ img{
     height: auto;
 }
 
+h2 {
+    font-size: 48px;
+}
+
 .header {
     display: flex;
     background-color: grey;
     justify-content: space-between;
     align-items: center;
     margin: 0;
-    padding: 0 48px;
+    padding: 0 10%;
     color: aliceblue;
 }
 
-.image {
+.banner {
     display: flex;
-    flex: 1 1 auto;
+    flex-wrap: nowrap;
     background-image: url(./img/cherryblossom.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-color: lightpink;
+    padding: 5% 10%;
+    height: 400px;
 }
 
 .hero {
     display: flex;
+    padding: 20px;
+    /*background-color: rgba(128, 128, 128, 0.5);*/
+}
+
+.hero-left {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 0 50%;
+    flex-direction: column;
+    background-color: rgba(128, 128, 128, 0.5);
+    color: aliceblue;
+}
+
+.hero-right {
+    display: flex;
+    flex-wrap: flex;
+    flex: 0 1 auto;
+    align-self:center;
 }
