@@ -30,6 +30,13 @@ h2 {
     margin: 0;
 }
 
+h3 {
+    font-size: 36px;
+    font-weight: bold;
+    /*padding: 0;
+    margin: 0;*/ 
+}
+
 button {
     background-color: aliceblue;
     color: grey;
@@ -93,4 +100,19 @@ button {
     justify-content: center;
     max-height: 390px;
     max-width: 520px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
