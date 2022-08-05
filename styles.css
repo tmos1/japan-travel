@@ -115,6 +115,7 @@ button {
     align-items: basline;
     gap: 20px;
     padding:0 10%;
+    margin-bottom: 36px;
 }
 
 .icon {
