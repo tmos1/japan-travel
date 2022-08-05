@@ -34,8 +34,6 @@ h2 {
 h3 {
     font-size: 36px;
     font-weight: bold;
-    /*padding: 0;
-    margin: 0;*/ 
 }
 
 h4 {
@@ -49,9 +47,7 @@ button {
     color: black;
     font-size: 24px;
     padding: 8px 16px;
-    border-radius: 8px;
     width: fit-content;
-    display: flex;
 }
 
 .header {
@@ -66,7 +62,6 @@ button {
 
 .banner {
     display: flex;
-    flex-wrap: nowrap;
     background-image: url(./img/cherryblossom.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -78,33 +73,30 @@ button {
 
 .hero {
     display: flex;
-    /*padding: 5% 10%;
-    /*background-color: rgba(128, 128, 128, 0.5);*/
     gap: 20px;
 }
 
-.hero-left {
+.hero-left,
+.hero-right {
     display: flex;
     flex-wrap: nowrap;
     flex: 1 0 50%;
     flex-direction: column;
+    max-height: 390px;
+    max-width: 520px;
+}
+
+.hero-left {
     background-color: rgba(86, 108, 116, 0.7);
     color: aliceblue;
     justify-content: space-between;
-    max-height: 390px;
-    max-width: 520px;
     padding: 24px;
     font-size: 18px;
 }
 
 .hero-right {
-    display: flex;
-    flex-wrap: flex;
-    flex: 0 1 50%;
     align-self:center;
     justify-content: center;
-    max-height: 390px;
-    max-width: 520px;
 }
 
 .info {
@@ -118,7 +110,7 @@ button {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: basline;
+    align-items: baseline;
     gap: 20px;
     padding:0 10%;
     margin-bottom: 36px;
@@ -136,7 +128,11 @@ button {
     font-size: 18px;
 }
 
-.pic {
+.hero-left,
+.hero-right,
+.pic,
+.signbox,
+button {
     border-radius: 8px;
 }
 
@@ -182,23 +178,21 @@ button {
     align-items: center;
     margin: 0 10%;
     background-color: rgb(86, 108, 116);
-    border-radius: 8px;
     padding: 0 48px;
 }
 
 .signleft {
-    display: flex;
-    flex-direction: column;
-    padding: 24px;
-    font-size: 18px;
-    justify-content: center;
     font-size: 18px;
     color: aliceblue;
 }
 
-.signright {
+.signright,
+.signleft {
     padding: 24px;
     flex-wrap: nowrap;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .footer {
