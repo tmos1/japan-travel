@@ -38,8 +38,8 @@ h3 {
 }
 
 button {
-    background-color: aliceblue;
-    color: grey;
+    background-color:  rgb(137, 196, 233);;
+    color: black;
     font-size: 24px;
     padding: 8px 16px;
     border-radius: 8px;
@@ -63,7 +63,7 @@ button {
     background-image: url(./img/cherryblossom.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: lightpink;
+    background-color: rgb(137, 196, 233);
     padding: 5% 10%;
     height: 440px;
     justify-content: center;
@@ -131,4 +131,31 @@ button {
 
 .pic {
     border-radius: 8px;
+}
+
+.quotebox {
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    justify-content: center;
+    align-items: center; 
+    gap: 10px;
+    background-color: grey;
+    color: aliceblue;
+}
+
+.quote {
+    display: flex;
+    flex-direction: column;
+    margin: 0% 20%;
+    font-size: 32px;
+    font-style: italic;
+}
+
+.attribution {
+    display: flex;
+    align-self: flex-end;
+    font-size: 32px;
+    font-weight: 700;
+    margin: 0 20%;
 }
